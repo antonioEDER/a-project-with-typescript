@@ -1,0 +1,12 @@
+o que é TypeScript:
+-> Código aberto desenvolvida pela Microsoft.
+-> É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática.
+-> Tornar o JS preficivel.
+
+yarn tsc -- app/playground.ts -w --strictNullChecks --declaration
+
+yarn tslint -- --init
+
+é transpilado pelo TypeScript compiler para es5
+
+Inferencia de tipos e declarations
