@@ -8,8 +8,8 @@ body {
   background: url(/course_wallpaper.01039659.jpg);
   background-size: cover;
   font-family: sans-serif; }
-  html img,
-  body img {
+  html header img,
+  body header img {
     width: 100px;
     float: right;
     margin: 5px; }

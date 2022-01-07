@@ -1,27 +1,25 @@
-import moment from 'moment';
-import './styles/modules/MessageBox.scss';
-import './styles/modules/MessagesArea.scss';
+import moment from "moment";
+import Message from "./model/message.model";
+import { messageFactory } from "./utils";
+import "./styles/modules/MessageBox.scss";
+import "./styles/modules/MessagesArea.scss";
 
-const template: any = require('./messages.html') ;
-const logo: any = require('./images/especializa_logo.jpg');
+const template: any = require("./messages.html");
+const logo: any = require("./images/especializa_logo.jpg");
 
-const Message = function (text) {
-  this.text = text
-  this.created = Date.now()
-}
+console.log("Index started again");
 
-/* eslint no-undef: 0 */
-const elementBtn: HTMLElement = document.getElementById('send') as HTMLElement;
-elementBtn.onclick = () => {
-  // Type Assertions 
-  const m = new Message((<HTMLInputElement>document.getElementById('message')).value);
-  (<HTMLElement>document.getElementById('messages')).innerHTML += template({
-    m,
-    relativeTime: moment(m.created).fromNow(),
+(<HTMLButtonElement>document.getElementById("send")).onclick = () => {
+  messageFactory((<HTMLInputElement>document.getElementById("message")).value)
+  .then((m: Message) => {
+    (<HTMLElement>document.getElementById("messages")).innerHTML += template({
+      m,
+      relativeTime: moment(m.created).fromNow(),
+    });
   });
 };
 
-(<HTMLImageElement>document.getElementById('logo')).src = logo;
+(<HTMLImageElement>document.getElementById("logo")).src = logo;
 
 if (module && module.hot) {
   module.hot.accept();
