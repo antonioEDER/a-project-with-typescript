@@ -1,25 +1,67 @@
-# ECMAScript 2015 / ES6 Learning Project
-This project is part of course
-[Learn Angular 2 + Nativescript and build a WhatsApp clone](https://www.udemy.com/angular-native).
-At the moment, only available in Portuguese, but English version is coming
-very soon. :)
+# a-project-with-typescript
 
-[![N|Solid](https://udemy-images.udemy.com/course/240x135/1011174_0030_3.jpg)](https://www.udemy.com/angular-native)
+```
+Esse é um projeto desenvolvido com TypeScript.
 
-This is a support project used by ES6 intro section,
-which is divided in two lectures:
+Nele vamos explorar ainda:
+- Configuraçoes [tsconfig.json] e [tslint.json]
+- Tipagem estática
+- Inferência de tipos e declarations
+- Classes e modificadores
+- Generics - Parte 1
+- Tipos compostos, types aliases e classes abstratas
 
-## Object orientation
-  - Classes
-  - Constructors
-  - toString
-  - Inheritance
-  - Getters / Setters
-  - Property shorthand
-  - *Extra feature:* String interpolation
 
-## Functions
-  - Arrow function
-  - Let e const
-  - Extended parameters
-  - Rest spread
+<h2 align="center">Install</h2>
+
+Build Development with yarn:
+
+```bash
+yarn build:dev
+```
+
+Build Prod with yarn:
+
+```bash
+yarn build
+```
+
+Start with yarn:
+
+```tsc
+yarn tsc
+```
+
+```bash
+yarn start
+```
+
+Serve with webpack-dev-serve:
+
+```bash
+yarn serve
+```
+
+Serve with express Development:
+
+```bash
+yarn express
+```
+
+Serve with express Prod:
+
+```bash
+yarn express:prod
+```
+
+Serve with Hot Module Replacemnt:
+
+```bash
+yarn hot
+```
+
+Clean path /dist:
+
+```bash
+yarn clean
+```
