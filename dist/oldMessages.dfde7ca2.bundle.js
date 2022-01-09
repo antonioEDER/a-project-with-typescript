@@ -1,0 +1,1 @@
+webpackJsonp([2],{146:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(0),u=t.n(r),c=t(1),i=t(2),o=(t.n(i),t(3)),a=new c.a,s=a.list(),m=s.map(function(e){return o({m:e,relativeTime:u()(e.created).fromNow()})}).reduce(function(e,n){return e+n});document.getElementById("messages").innerHTML=m}},[146]);

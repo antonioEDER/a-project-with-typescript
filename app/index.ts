@@ -1,13 +1,13 @@
 import moment from "moment";
 import Message from "./model/message.model";
-import { messageFactory } from "./utils";
+import { messageFactory, Store } from "./utils";
 import "./styles/modules/MessageBox.scss";
 import "./styles/modules/MessagesArea.scss";
 
 const template: any = require("./messages.html");
 const logo: any = require("./images/especializa_logo.jpg");
+const store: Store<Message> = new Store<Message>();
 
-console.log("Index started again");
 
 (<HTMLButtonElement>document.getElementById("send")).onclick = () => {
   messageFactory((<HTMLInputElement>document.getElementById("message")).value)
@@ -16,6 +16,8 @@ console.log("Index started again");
       m,
       relativeTime: moment(m.created).fromNow(),
     });
+    store.add(m)
+    store.commit()
   });
 };
 
