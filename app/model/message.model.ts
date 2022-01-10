@@ -1,11 +1,12 @@
-interface IMessage {
+interface Model {
   text: string;
   created: number;
+  title?: string;
   save(): void;
   delete(): void;
 }
 
-export default class Message implements IMessage {
+export default class Message implements Model {
   public static newEmptyMessage(): Message {
     return new Message();
   }
