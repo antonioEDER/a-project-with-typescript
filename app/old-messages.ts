@@ -14,4 +14,4 @@ const messagesContent = messages
   .reduce((result, current) => result + current);
 
 /* eslint no-undef: 0 */
-(<HTMLInputElement>document.getElementById('messages')).innerHTML = messagesContent;
+(<HTMLElement>document.getElementById('messages')).innerHTML = messagesContent;

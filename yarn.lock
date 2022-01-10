@@ -8279,11 +8279,6 @@ trim-right@^1.0.1:
   dependencies:
     glob "^7.1.2"
 
-ts-promise@^0.3.4:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/ts-promise/-/ts-promise-0.3.4.tgz#165ff9ad521476d93c005601eefe5bb92d579cbe"
-  integrity sha1-Fl/5rVIUdtk8AFYB7v5buS1XnL4=
-
 tsconfig-paths@^3.12.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.12.0.tgz#19769aca6ee8f6a1a341e38c8fa45dd9fb18899b"
